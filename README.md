@@ -1,4 +1,4 @@
-# Ladderr - (Group Project)
+# Ladderr - Online Job Portal (Group Project)
 
 ![image](https://user-images.githubusercontent.com/99181964/212738752-9b7ca6e8-2fdd-4cf1-8191-9951daa71223.png)
 
