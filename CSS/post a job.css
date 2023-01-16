@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+body {
+  font-family: roboto, sans-serif;
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 40px;
+}
+
+
+/*form css starts*/
+
+
+#formStyle1 label,
+#formStyle3 label {
+  display: block;
+  font-size:16px;
+  float:left;
+  margin-left:10px;
+}
+
+#formStyle6 input[type=text],
+#formStyle6 input[type=email],
+#formStyle3  input[type= password],
+#formStyle1  input[type= password],
+#formStyle1  input[type= number],
+#formStyle1 input[type=file],
+#formStyle1 input[type=number]
+#formStyle4 input[type=email],
+#formStyle1 input[type=email],
+#formStyle1 input[type=month],
+#formStyle1 input[type=date],
+#formStyle1 input[type=text],
+#formStyle1 input[type=tel],
+#formStyle3 input[type=text],
+#formStyle4 input[type=tel],
+#formStyle4 input[type=text],
+#formStyle1 select{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+}
+
+#formStyle6 textarea,
+#formStyle1 textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid rgb(45, 132, 158);
+  border-radius: 3px;
+  height:80px;
+  font-family:Verdana;
+  border-radius:50px;
+  outline:none;
+  resize: vertical;
+  
+}
+
+#formStyle1 form,
+#formStyle2 form,
+#formStyle3 form,
+#formStyle4 form{
+	padding:20px;
+	background-color: rgba(9, 42, 50, 0.4);
+	font-size:14px;
+	font-family:Verdana;
+	color:black;
+	margin:20px;
+	box-shadow:1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+	outline: none;
+	border:none;
+	
+}
+
+ .btnn button{
+  height: auto;
+  width: 100px;
+  line-height: 4.5rem;
+  border: 0px;
+  border-radius: .5rem;
+  background: #2c638d;
+  color:black;
+  font-size: 2rem;
+  margin-left: .3rem;
+  cursor: pointer;
+  text-align: center;
+}

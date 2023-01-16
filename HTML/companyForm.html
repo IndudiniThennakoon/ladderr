@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Create Company profile</title>
+        
+        <!---------Link to CSS style sheet------>
+        <link rel="stylesheet" href="..\CSS\style.css">
+        <link rel="stylesheet" href="..\CSS\headerfooter.css">
+        <link rel="stylesheet" href="../CSS/styleCompanyform.css">
+        
+        <!--------external link for icons-------->
+        <script src="https://kit.fontawesome.com/d9dc65a069.js" ></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> 
+        
+    </head>
+    <body>
+
+	<!----------Menu---------->
+	<header class="header">
+
+		<h2 class="logo">
+			<span class='bi bi-ladder' style='color:#ff7800'></span> ladderr </h2>
+
+		<nav class="navbar">
+			<a href="../HTML/home.html">Home</a>
+			<a href="../HTML/jobvacanciesPage.html">Find a Job</a>
+			<a href="../HTML/companiespage.html">Find a Company</a>
+		</nav>
+
+		<div class="icons">
+			
+			<button id="search-btn"><a class="noUndreline" href="../HTML/login.html">Login</a></button>
+			<button id="login-btn"><a class="noUndreline" href="../HTML/createaccount.html">Register</a></button>
+			<div class="fas fa-bars" id="menu-btn"></div>
+		
+		</div>
+		<div class="MENU">
+			<div class="box">
+				<a href="../HTML/home.html">Home</a> 
+			</div>
+			<div class="box">
+				<a href="../HTML/jobvacanciesPage.html">Find a Job</a> 
+			</div>
+			<div class="box">
+				<a href="../HTML/companiespage.html">Find a Company</a>
+			</div>
+		</div>
+	</header>
+	<!----------end of header---->
+        
+        <section id="page">
+        
+
+        <!----Company Form starts---->
+        
+            <section class="Form" id="Form">
+                <h1 class="heading">Create Company profile</h1>
+                <h3 class="sub-heading">Quik & Easy steps to take...</h3> 
+                <h5>We helps you to publish your company profile in our website.<br> We garantee that it would definetly helps to find employees easily.</h5>
+                <center>
+                    <img src="../images/office.gif" alt="" class="src">
+                </center>
+                
+                <form method="post" action="../PHP/insertProfiledata.php" enctype="multipart/form-data">
+            
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Company Name</span>
+                            <input type="text" name="C_name" placeholder="enter your company name" required  autofocus>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Field</span>
+                            <input list="fields" name="fields" placeholder="Select relevent field">
+                                <datalist id="fields">
+                                    <option value="IT">
+                                    <option value="Construction">
+                                    <option value="Security">
+                                    <option value="Education">
+                                    <option value="Food & beverages">
+                                    <option value="Hotel & Tuorism">
+                                    <option value="Agriculture">
+                                    <option value="Engineering">
+                                    <option value="Management">
+                                    <option value="Textile & apparal">
+                                </datalist>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Company Address</span>
+                            <textarea name="C_address" rows="5" cols="30" required>
+                                Address...</textarea>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>website</span>
+                            <input type="url" name="C_url" placeholder="enter your company website URL">
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Email</span>
+                            <input type="text" name="C_email" placeholder="enter your company email" required>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Establishes Year</span>
+                            <input type="number"  name="C_estYr" min="1900" max="2022" step="1" value="2022">
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>CEO name</span>
+                            <input type="text" name="C_ceo" placeholder="enter your CEO name" required>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Contact number</span>
+                            <input type="phone" name="C_phone" pattern="[0-9]{10}" placeholder="0372249568" required>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>No of Employees</span>
+                            <input type="number" name="C_noOfemp" placeholder="">
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Add company Logo</span>
+                            <input type="file" name="C_logo" id="logo" onchange="logoValidation()" >
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Description</span>
+                            <textarea name="C_description" rows="5" cols="30" >
+                                Enter text here...</textarea>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h1 class="heading">Create Recruiter profile</h1>
+                <div class="inputBox">
+                    <div class="input">
+                        <span>First Name</span>
+                        <input type="text" name ="Rfname" placeholder="enter your first name" required  autofocus>
+                    </div>
+                </div>
+                <div class="inputBox">
+                  <div class="input">
+                      <span>Last Name</span>
+                      <input type="text" name ="RLname"placeholder="enter your last name" required >
+                  </div>
+              </div>
+                <div class="inputBox">
+                  <div class="input">
+                      <span>Address</span>
+                      <input name ="Raddr" placehoder="enter your address" type="text" required>
+                  </div>
+              </div>
+              <div class="inputBox">
+                  <div class="input">
+                      <span>Gender</span>
+                      <input list="gender" name="gender" placeholder="gender" placeholder="enter your address"required>
+                          <datalist id="gender">
+                              <option value="M">
+                              <option value="F">
+                          </datalist>
+                  </div>
+              </div>
+              <div class="inputBox">
+                  <div class="input">
+                      <span>NIC</span>
+                      <input type="number" name ="NIC" placeholder="enter your NIC without 'v/V'" >
+                  </div>
+              </div>
+              <div class="inputBox">
+                  <div class="input">
+                      <span>Position</span>
+                      <input type="text"  name ="Post" required>
+                  </div>
+              </div>
+              <div class="inputBox">
+                  <div class="input">
+                      <span>Official email</span>
+                      <input type="text" name ="Remail"placeholder="enter your official email" required>
+                  </div>
+              </div>
+              <div class="inputBox">
+                  <div class="input">
+                      <span>mobile number</span>
+                      <input type="phone" name ="RpNo" pattern="[0-9]{10}" placeholder="0372249568" required>
+                  </div>
+              </div>
+                
+                <div class="nxt-btn-box">
+                    <!----reset button-------->
+                    <input type="reset" id="button">
+
+                    <!------submit button-->
+                    <input type="submit" id="button" name="submit" >
+                
+                </div>
+            </form>
+                
+            </section>
+        </section>
+            <!----Company Form ends---->
+
+
+    </section>  
+    
+    
+    
+    <!---------FOOTER--------->
+	
+<footer>
+	<div class="row">
+		<!-------Other LINKs-------->
+		<!-------Ladderr-------->
+		<div class="col">
+			<h3>ladderr</h3>
+				<ul>
+					<li><a href="../HTML/about us.html">About</a></li>
+					<li><a href="../HTML/feedback.html">Feedback</a></li>
+					<li><a href="../PHP/new.php">Contact us</a></li>
+				</ul>
+		</div>
+
+		<!-------Products-------->
+		<div class="col">
+			<h3>Products</h3>
+				<ul>
+					<li><a href="../HTML/my vacancy.html">Find Jobs</a></li>
+					<li><a href="../HTML/companiespage.html">Find Company</a></li>
+					<li><a href="../PHP/createMyProfile.php">Register Job seeker</a></li>
+					<li><a href="../HTML/companyForm.html">Register Company</a></li>
+				</ul>
+		</div>
+
+		<!-------Quick links-------->
+		<div class="col">
+			<h3>Quick Links</h3>
+				<ul>
+					<li><a href="../HTML/searchJobs.html">Remote jobs</a></li>
+					<li><a href="../HTML/searchJobs.html">Part time jobs</a></li>
+					<li><a href="../HTML/searchJobs.html">Top jobs</a></li>
+					<li><a href="../HTML/searchCompanies.html">Top Companies</a></li>
+					
+				</ul>
+		</div>
+
+		<!-------Help Centre-------->
+		<div class="col">
+			<h3>Help Centre</h3>
+				<ul>
+					<li><a href="privacy.html">Policy</a></li>
+					<li><a href="t&c.html">Terms & Conditions</a></li>
+				</ul>
+		</div>
+
+		<!---------Social Media Icons--------->
+		<div class="col2">
+			<ul>
+				<li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+				<li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+				<li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+				<li><a><i class="fa-brands fa-instagram-square"></i></a></li>
+				<li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+			</ul>
+			<p id="ALLRIGHTS">2022 ladderr. All Rights Reserved.</p>
+		</div>
+		
+	</div>
+	
+</footer>
+<!----------footer ends------>
+
+    <script src="../JS/script.js"></script>
+    <script src="../JS/scriptCompanyform.js"></script>
+    
+    </body>
+</html>
+

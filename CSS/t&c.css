@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Open+Sans&family=Poppins:wght@300&family=Roboto+Mono:wght@300&display=swap');
+
+/*
+font-family: 'Manrope', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace;
+*/
+h1{
+    width: 100%;
+    margin-top: 100px;
+    padding-top: 1500px;
+    padding: 10px;
+    font-size: 50px;
+    color: #130f40;
+    font-family: 'Manrope', sans-serif;
+    display: block;
+    border: 0px;
+    width:auto;
+    
+    text-align:center;
+    
+}
+
+h1 i{
+    color: #ff7800;
+}
+.Box p{
+    font-size: 16px;
+    color: black;
+    font-family:Poppins', sans-serif ;
+}
+.Box h3{
+    font-size: 30px;
+    color:#ff7800;
+    font-family:'Roboto Mono', monospace;
+}
+
+.Box ul{
+    list-style:circle;
+    font-size: 25px;
+    color: #ff7800;
+    
+}
+
+.Box ul li{
+    font-size: 16px;
+    color: black;
+    font-family:Poppins', sans-serif ;
+    
+}
