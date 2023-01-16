@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<!---------HEADER----------->
+<head>
+	
+	<!----------Website title---------->
+	<title>Create My Profile</title>
+
+	<!---------Link to CSS style sheet------>
+	<link rel="stylesheet" href="..\css\createMyProfile.css">
+	<link rel="stylesheet" href="..\CSS\headerfooter.css">
+	<link rel="stylesheet" href="..\CSS\companyProfile.css">
+	
+
+</head>
+
+<body>
+	
+	<!----------Menu---------->
+	<header class="header">
+
+		<h2 class="logo">
+			<span class='bi bi-ladder' style='color:#ff7800'></span> ladderr </h2>
+
+		<nav class="navbar">
+			<a href="../HTML/home.html">Home</a>
+			<a href="../HTML/jobvacanciesPage.html">Find a Job</a>
+			<a href="../HTML/companiespage.html">Find a Company</a>
+		</nav>
+
+		<div class="icons">
+			
+			<button id="search-btn"><a class="noUndreline" href="../HTML/login.html">Login</a></button>
+			<button id="login-btn"><a class="noUndreline" href="../HTML/createaccount.html">Register</a></button>
+			<div class="fas fa-bars" id="menu-btn"></div>
+		
+		</div>
+		<div class="MENU">
+			<div class="box">
+				<a href="../HTML/home.html">Home</a> 
+			</div>
+			<div class="box">
+				<a href="../HTML/jobvacanciesPage.html">Find a Job</a> 
+			</div>
+			<div class="box">
+				<a href="../HTML/companiespage.html">Find a Company</a>
+			</div>
+		</div>
+	</header>
+	<!----------end of header---->
+	
+<section id="webpage">
+	<section class="createProfile" id="Form">
+		<h1 class="heading">Create My profile</h1>
+		<h3 class= "sub-heading">Your dream is waiting for you <br> This this the best place to find your dream jobs</h3>
+		<center>
+			<img src="../images/myprofile.jpg" alt="image" class="src">
+		</center>
+	
+		<form class="signup-form" action="../PHP/createMyPrifile.php" method="post">
+			
+			<!-- form header -->
+			 <div class="form-header">
+				<h1>Create My Profilet</h1>
+			</div>
+		
+			<!-- form body -->
+			<div class="form-body">
+	
+				 <!-- Firstname and Lastname -->
+				 <div class="horizontal-group">
+					<div class="form-group left">
+						
+						<label for="firstname" class="label-title">First name *</label>
+						<input type="text" name="firstname" class="form-input" placeholder="enter your first name" required="required" />
+					</div>
+					<div class="form-group right">
+						<label for="lastname" class="label-title">Last name *</label>
+						<input type="text" name="lastname" class="form-input" placeholder="enter your last name" />
+					</div>
+				</div>
+	
+				<!-- User Name -->
+				<div class="form-group">
+					
+					<label for="username" class="label-title">User Name*</label>
+					<input type="text" name="username" class="form-input" placeholder="enter your username" required="required">
+				</div>
+	
+				<!-- Address -->
+				<div class="form-group">
+					
+					<label for="address1" class="label-title">Address*</label>
+					<input type="text" name="address1" class="form-input" placeholder="Street,P.O. Box,etc" required="required">
+					<br><br>
+					<input type="text" name="address2" class="form-input" placeholder="Spt,Suite,Unite (Optional) ">
+					
+				</div>
+	
+				<!-- Province and City-->
+				<div class="horizontal-group">
+					<div class="form-group left">
+						
+						<label for="province" class="label-title">Province *</label>
+						<input type="text" name="province" class="form-input" placeholder="enter your city" required="required" />
+					</div>
+					<div class="form-group right">
+						
+						<label for="city" class="label-title">City *</label>
+						<input type="text" name="city" class="form-input" placeholder="enter your city" />
+					</div>
+				</div>
+	
+				<!-- Email -->
+				<div class="form-group">
+					
+					<label for="email" class="label-title">Email*</label>
+					<input type="email" name="email" class="form-input" placeholder="enter your email" required="required">
+				</div>
+	
+				<!-- mobile -->
+				<div class="form-group">
+					
+					<label for="mobile" class="label-title">Mobile*</label>
+					<input type="mobile" name="mobile" class="form-input" placeholder="+94|" required="required">
+				</div>
+	
+				<!--profile picture-->
+				<div class="form-group" >
+					
+					<label for="choose-file" class="label-title">Upload Profile Picture</label>
+					<br>
+					<input type="file" name="profile" size="80">
+					
+				</div>
+	
+				<!-- Bio -->
+				<div class="form-group">
+					
+					<label for="choose-file" class="label-title">Bio</label>
+					<textarea class="form-input" name="bio" rows="4" cols="50" style="height:auto"></textarea>
+				</div>
+				<br><br>
+				<hr>
+				<br><br>
+				<!-- Education -->
+				<div class ="education" >
+					<h3>Education </h3>
+				</div>
+				<!-- qulification -->
+				<div class="form-group">
+					
+					<label for="qualification" class="label-title">Qualification</label>
+					<textarea class="form-input" name="qualification" rows="4" cols="50" style="height:auto"></textarea>
+				</div>
+	
+				<!-- Institute -->
+				<div class="form-group">
+					
+					<label for="institute" class="label-title">Institute *</label>
+					<input type="institute" name="institute" class="form-input" placeholder="enter your email" required="required">
+				</div>
+				
+				<div class="horizontal-group">
+					<div class="form-group left">
+						
+						<label for="since" class="label-title">Since *</label>
+						<input type="date" name="ins_since" class="form-input" placeholder="">
+					</div>
+					<div class="form-group right">
+						
+						<label for="since" class="label-title">Till *</label>
+						<input type="date" name="ins_till" class="form-input" placeholder="">
+					</div>
+				</div>
+	
+				<br>
+				<hr>
+				<br>
+	
+				<!-- Skiils & Languages -->
+				<div class ="Skiils & Languages" >
+					<h3>Skiils & Languages </h3>
+				</div>
+				<!-- Skiils -->
+				<div class="form-group">
+					
+					<label for="skiil" class="label-title">Skiils </label>
+					<textarea class="form-input" name="skiil" rows="4" cols="50" style="height:auto"></textarea>
+				</div>
+	
+				<!-- Languages -->
+				<div class="form-group">
+					
+					<label for="lang" class="label-title">Languages</label>
+					<input type="lang" name="language"  class="form-input" placeholder="">
+				</div>
+				
+				<br>
+				<hr>
+				<br>
+	
+				<!-- Certificates -->
+	
+				<br>
+				<div class="form-group" >
+					
+					<label for="choose-file" class="label-title">Certificates</label>
+					<br>
+					<input type="file" name="certificate" size="80">
+				</div>
+				
+				
+	
+				<!-- My resume -->
+	
+				<br>
+				<div class="form-group" >
+					
+					<label for="choose-file" class="label-title">My Resume</label>
+					<br>
+					<input type="file" name="choose-file" size="80">
+				</div>
+				
+				<br>
+				<hr>
+				<br>
+	
+				<!-- experience -->
+	
+				<h3>Do you have work experience? </h3>
+				<br>
+				<div class="horizontal-group">
+					<div class ="from-group left">
+						
+						<input type="checkbox" id="yes" name="experience" value="yes">
+						<label for="yes"> Yes</label>
+					</div>
+					<div class ="from-group right">
+						
+						<input type="checkbox" id="no" name="experience" value="no">
+						<label for="no"> No</label>
+					</div>
+				</div>
+				<div class="form-group">
+					
+					<label for="com name" class="label-title">Company Name</label>
+					<input type="com name" name="com name" class="form-input" placeholder="" >
+				</div>	
+				
+				<div class="form-group">
+					
+					<label for="position" class="label-title">Company Name</label>
+					<input type="position" name="position" class="form-input" placeholder="">
+				</div>
+				
+				<div class="horizontal-group">
+					<div class="form-group left">
+						
+						<label for="since" class="label-title">Since </label>
+						<input type="date" name="since" class="form-input" placeholder="">
+					</div>
+					<div class="form-group right">
+						
+						<label for="since" class="label-title">Till </label>
+						<input type="date" name="till" class="form-input" placeholder="">
+					</div>
+	
+	
+		
+			</div>
+	
+			<!-- form footer -->
+			<div class="form-footer">
+				<span>* required</span>
+				<button type="submit" class="btn" name="submit ">Reset</button>
+				<button type="reset" class="btn" name ="reset">Create</button>
+			  </div>
+	
+		</form>
+	
+	</section>
+	
+		
+		<!---------FOOTER--------->
+		
+	
+</section>
+</body>
+</html>
