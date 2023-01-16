@@ -1,4 +1,4 @@
-# Ladderr
+# Ladderr - (Group Project)
 
 ![image](https://user-images.githubusercontent.com/99181964/212738752-9b7ca6e8-2fdd-4cf1-8191-9951daa71223.png)
 
@@ -27,15 +27,21 @@ _____________________
 
 ## Online Job Portal
 
-| Registration Number | Name | Email | Contribution |
+| Registration Number | Name | Email | Contribution | 
 | :---: | :---: | :---: | :---: |
-| **IT 21 1700 34** | **L. S. Farveen** | ***it21170034@my.sliit.lk*** |  |
+| **IT 21 1700 34** | **L. S. Farveen (leader)** | ***it21170034@my.sliit.lk*** |  |
 | IT 21 1690 76 | D. A. S. M. Athukorala | *it21169076@my.sliit.lk* |  |
 | IT 21 1713 38 | T. M. T. C. Tennakoon | *it21171338@my.sliit.lk* |  |
 | IT 21 1709 66 | Thennakoon T.M.I.C | *it21170966@my.sliit.lk* | Applicant Managment , Policy|
 | IT 21 1688 40 | W. A. N. P. M. Kusumsiri | *it21168840@my.sliit.lk*| |
 
-______________
+<br><br>
+
+### 🔖 My contribution - Applicant Managment and Policy Management 
+
+ branch - IT21170966-IndudiniThennakoon
+ 
+ <hr>
 
  <a href="https://www.w3.org/html/" target="_blank"> <img src="https://img.icons8.com/color/48/000000/html-5.png"/> </a>  <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://img.icons8.com/color/48/000000/css3.png"/> </a>
  <a href="https://www.javascript.com/" target="_blank"><img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/> </a>
